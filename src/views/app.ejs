@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <%-include('partials/head.ejs')%>
+</head>
+<body class="bodyA">
+    
+    
+<a href="/"><button>Index</button></a>
+<a href="/cadastro"><button>Cadastro</button></a>
+<a href="/homepage"><button>Homepage</button></a>
+<a href="/duvidas"><button>Duvidas</button></a>
+<a href="/app"><button>App</button></a>
+<a href="/appList"><button>AppList</button></a>
+
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <h2>Preencha os campos abaixo</h2>
+
+            <form id="formCadastro" action="/app/add" method="POST">
+                <div class="personal-data">
+                    <div class="input-wrapper">
+                        <label>Nome</label>
+                        <input type="text" name="name" id="nameApp" placeholder="Digite o seu nome">
+                        <span class="erro"></span>
+                    </div>
+                <div class="input-wrapper">
+                    <label>RGA</label>
+                    <input type="number" name="rga" id="rgaApp" placeholder="Digite o seu RGA">
+                    <span class="erro"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label>E-mail</label>
+                    <input type="email" name="email" id="emailApp" placeholder="Digite o seu e-mail" >
+                    <span class="erro"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label>Curso</label>
+                    <select id ="cursoApp" name="course">
+                        <option value="">-- Selecione --</option>
+                        <option value="Engenharia de Computação">Engenharia de Computação</option>
+                        <option value="Engenharia de Controle e Automação">Engenharia de Controle e Automação</option>
+                        <option value="Engenharia de Minas">Engenharia de Minas</option>
+                        <option value="Engenharia de Transportes">Engenharia de Transportes</option>
+                        <option value="Engenharia Química">Engenharia Química</option>
+                    </select>
+                    <span class="erro"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label>Telefone</label>
+                    <input name="phone" type="number" id="telApp" placeholder="Digite o seu telefone">
+                    <span class="erro"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label>Tipo</label>
+                    <select name="type" id ="tipoApp">
+                        <option value="">-- Selecione --</option>
+                        <option value="Horas complementares">Horas complementares</option>
+                        <option value="Horas de extensão">Horas de extensão</option>
+                    </select>
+                    <span class="erro"></span>
+                </div>
+                <div class="input-wrapper">
+                    <label>Anexe seu certificado para comprovar suas horas (somente em PDF)</label>
+                    <input type="file" accept=".pdf" name="file" id="arqApp">
+                    <span class="erro"></span>
+                </div>
+
+                <div class="input-wrapper">
+                    <label>Horas registradas no documento</label>
+                    <input name="hrsD" type="number" id="hrsDApp" placeholder="Digite as hrs registradas">
+                    <span class="erro"></span>
+                </div>
+            </div>
+            
+            <div class="input-wrapper">
+                <label>Mensagem (opcional)</label>
+                <input name="msg" id="msgApp" maxlength="100" placeholder="Digite uma observação para o avaliador" >
+            </div>   
+        </div>
+        <div class="btn-box">
+            <div class="btns">
+            <a href="homepage"><button onclick="irHp()" id="btnHp" class="btn">Voltar</button></a>
+            </div>
+            <div class="btns">
+                <button class ="btn" type="submit" id="sendApp"> Enviar</button>
+            </div>
+        </div>
+        
+        </form>
+
+        
+    </section>
+
+    <footer class="footer">
+    © 2023 UFMT - Todos os direitos reservados
+    <br>
+    Desenvolvido por Matheus Carvalho
+    </footer>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/graph.js"></script>
+
+</body>
+</html>

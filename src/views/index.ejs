@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <%-include('partials/head.ejs')%>
+</head>
+<body class="bodyI">
+
+<a href="/"><button>Index</button></a>
+<a href="/cadastro"><button>Cadastro</button></a>
+<a href="/homepage"><button>Homepage</button></a>
+<a href="/duvidas"><button>Duvidas</button></a>
+<a href="/app"><button>App</button></a>
+<a href="/appList"><button>AppList</button></a>
+
+<form class="form" id="formCadastro" action="">
+    <div class="card">
+        <div class="card-top">
+            <img class="img-login" src="img/login-icon.jpg" alt="icone-usuario">
+            <img class="img-logo" src="img/logo-ufmt.png" alt="logo-ufmt">
+            <h1 class="title">Seja bem vindo!</h1>
+            <br>
+            <p>Gerencie e visualize suas horas de atividades de extenção e atividades complementares</p>
+        </div>
+    <br>
+
+        <div class="card-group">
+            <label for="emailIndex" class="bold">Email</label>
+            <input type="email" name="email" id="emailIndex" placeholder="Digite seu e-mail ">
+            <span class="erro"></span>
+        </div>
+
+        <div class="card-group">
+            <label for="passwordIndex"class="bold">Senha</label>
+            <input type="password" name="senha" id="passwordIndex" placeholder="Digite sua senha ">
+            <span class="erro"></span>
+        </div>
+
+        <div class="card-group ">
+            <label><input type="checkbox" onclick="mostrarSenha()";>Mostrar senha</label>
+
+            <div class="card-group ">
+                <label><input type="checkbox">Lembre-me</label>
+            </div>
+
+            <div class="card-group btns">
+                <a href="homepage"><button type="submit" id="sendIndex">Acessar</button></a>
+                <a href="cadastro"><button id="btnCad">Cadastre-se</button></a>
+                
+             </div>
+</form>    
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="footer-container ">
+            <div class="footer-link border ">
+                <ul>
+                    <li><a href="https://www.ufmt.br" target="_blank " class="active ">Acesse a página da UFMT</a></li>
+                    <li><a href="https://sistemas.ufmt.br/ufmt.portalsistemas" target="_blank " class="active ">Acesse a página do portal de sistemas integrados</a></li>
+                    <li><a href="https://www.ufmt.br/site/sei/pagina/acessos-1603224167/1737" target="_blank " class="active ">Acesse o SEI</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <%-include('partials/footer.ejs')%>
+    <%-include('partials/foot.ejs')%>
+</body>
+</html>

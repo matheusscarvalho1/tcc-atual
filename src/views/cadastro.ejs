@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <%-include('partials/head.ejs')%>
+</head>
+<body class="bodyC">
+    
+<a href="/"><button>Index</button></a>
+<a href="/cadastro"><button>Cadastro</button></a>
+<a href="/homepage"><button>Homepage</button></a>
+<a href="/duvidas"><button>Duvidas</button></a>
+<a href="/app"><button>App</button></a>
+<a href="/appList"><button>AppList</button></a>
+
+    <form class="form" id="formCadastro" action="/cadastro/add" method="POST">
+        <div class="card">
+            <div class="card-top">
+                <img class="imglogin" src="img/login-icon.jpg" alt="">
+                <h2 class=" title">Informe seus dados</h2>
+                <br>
+                <p>Insira seus dados corretamente para cadastrar e assim ingressar no sistema</p>
+            </div>
+
+            <div class="card-group">
+                <label for ="nameCad" class="bold">Nome Completo</label>
+                <input type="text" name="name" id="nameCad" placeholder="Digite o seu primeiro nome">
+                <small class="erro"></small>
+            </div>
+
+            <div class="card-group">
+                <label for="sNameCad" class="bold">RGA</label>
+                <input type="text" name="rga" id="sNameCad" placeholder="Digite seu sobrenome">
+                <small class="erro"></small>
+            </div>
+
+            <div class="card-group">
+                <label for="emailCad" class="bold">Email</label>
+                <input type="email" name="email" id="emailCad" placeholder="Digite seu e-mail">
+                <small class="erro"></small>
+            </div>
+
+        
+            <div class="card-group">
+                <label for="passwordCad" class="bold">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                <small class="erro"></small>
+            </div>
+        
+            <div class="card-group">
+                <label class="bold">Seu perfil é de professor ?</label>
+            </div>
+                <input type="checkbox" id="chk" value="false" />
+                <label for="chk" class="switch">
+                    <span class="slider"></span>
+                </label>
+        
+            <div class="card-group">
+                <label><input type="checkbox" onclick="mostrarSenha();">Mostrar senha</label>
+            </div>
+            <div class="card-group btns">
+                <button type="submit" id="sendCad">Cadastrar</button>
+                <a href="/"><button id="btnLogin">Voltar</button></a>
+            </div>  
+        </div>
+    </form>
+
+<footer>
+    <div class="footer-container ">
+        <div class="footer-link border ">
+            <ul>
+                <li><a href="https://www.ufmt.br " target="_blank " class="active ">Acesse a página da UFMT</a></li>
+                <li><a href="https://sistemas.ufmt.br/ufmt.portalsistemas " target="_blank " class="active ">Acesse a página do portal de sistemas integrados</a></li>
+                <li><a href="https://www.ufmt.br/site/sei/pagina/acessos-1603224167/1737 " target="_blank " class="active ">Acesse o SEI</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+    <%-include('partials/footer.ejs')%>
+    <%-include('partials/foot.ejs')%>
+</body>
+</html>
