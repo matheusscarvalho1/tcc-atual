@@ -17,26 +17,31 @@
         <div class="container">
             <h2>Preencha os campos abaixo</h2>
 
-            <form id="formCadastro" action="/app/add" method="POST" autocomplete="off" enctype="multipart/form-data">
+            <% if (typeof message !== 'undefined') { %> 
+                <%= message %>
+                
+            <% } %>
+
+            <form id="formCadastro" action="/edit/<%= data._id %>" method="POST" autocomplete="off">
                 <div class="personal-data">
                     <div class="input-wrapper">
                         <label>Nome</label>
-                        <input type="text" name="name" id="nameApp" placeholder="Digite o seu nome" required>
+                        <input type="text" name="name" id="nameApp" placeholder="Digite o seu nome" value="<%= data.name %>">
                         <span class="erro"></span>
                     </div>
                 <div class="input-wrapper">
                     <label>RGA</label>
-                    <input type="number" name="rga" id="rgaApp" placeholder="Digite o seu RGA" required>
+                    <input type="number" name="rga" id="rgaApp" placeholder="Digite o seu RGA" value="<%= data.rga %>">
                     <span class="erro"></span>
                 </div>
                 <div class="input-wrapper">
                     <label>E-mail</label>
-                    <input type="email" name="email" id="emailApp" placeholder="Digite o seu e-mail" required>
+                    <input type="email" name="email" id="emailApp" placeholder="Digite o seu e-mail" value="<%= data.email %>">
                     <span class="erro"></span>
                 </div>
                 <div class="input-wrapper">
                     <label>Curso</label>
-                    <select id ="cursoApp" name="course" required>
+                    <select id ="cursoApp" name="course">
                         <option value="">-- Selecione --</option>
                         <option value="Engenharia de Computação">Engenharia de Computação</option>
                         <option value="Engenharia de Controle e Automação">Engenharia de Controle e Automação</option>
@@ -48,12 +53,12 @@
                 </div>
                 <div class="input-wrapper">
                     <label>Telefone</label>
-                    <input name="phone" type="number" id="telApp" placeholder="Digite o seu telefone" required>
+                    <input name="phone" type="number" id="telApp" placeholder="Digite o seu telefone" value="<%= data.phone %>">
                     <span class="erro"></span>
                 </div>
                 <div class="input-wrapper">
                     <label>Tipo</label>
-                    <select name="type" id ="tipoApp" required>
+                    <select name="type" id ="tipoApp" value="<%= data.type %>">
                         <option value="">-- Selecione --</option>
                         <option value="Horas complementares">Horas complementares</option>
                         <option value="Horas de extensão">Horas de extensão</option>
@@ -62,33 +67,34 @@
                 </div>
                 <div class="input-wrapper">
                     <label>Anexe seu certificado para comprovar suas horas (somente em PDF)</label>
-                    <input type="file" accept=".pdf" name="file" id="arqApp" required>
+                    <input type="file" accept=".pdf" name="file" id="arqApp" value="<%= data.file %>">
                     <span class="erro"></span>
                 </div>
 
                 <div class="input-wrapper">
                     <label>Horas registradas no documento</label>
-                    <input name="hrsD" type="number" id="hrsDApp" placeholder="Digite as hrs registradas" required>
+                    <input name="hrsD" type="number" id="hrsDApp" placeholder="Digite as hrs registradas" value="<%= data.hrsD%>">
                     <span class="erro"></span>
                 </div>
             </div>
             
             <div class="input-wrapper">
                 <label>Mensagem (opcional)</label>
-                <input name="msg" id="msgApp" maxlength="100" placeholder="Digite uma observação para o avaliador" required>
+                <input name="msg" id="msgApp" maxlength="100" placeholder="Digite uma observação para o avaliador"value="<%= data.msg %>" >
             </div>   
         </div>
         <div class="btns-boxA">
             <div class="btnsA">
-                <a href="homepage"><button type="button" onclick="irHp()" id="btnHp" class="btn">Voltar</button></a>
+                <a href="appList"><button type="button" onclick="irHp()" id="btnHp" class="btn">Voltar</button></a>
             </div>
         
             <div class="btnsA">
-                <button class ="btn" type="submit" id="sendApp"> Enviar</button>
+                <button class ="btn" type="submit" id="sendApp">Editar</button>
             </div>
         </div>
         </form>
-          
+        
+        </form>
 
         
     </section>

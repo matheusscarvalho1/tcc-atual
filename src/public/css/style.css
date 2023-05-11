@@ -15,6 +15,12 @@
     font-family: 'Arial', sans-serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .footer2 {
     background-color: var(--color-header-footer);
     color: var(--color-secondary);
@@ -273,6 +279,7 @@
 .bodyC .btns {
     margin-top: 30px;
     text-align: center;
+    
 }
 
 
@@ -1003,27 +1010,7 @@ li {
     color: var(--color-tertiary)
 
  }
-  /*.complementares button {
-     background-color: var(--color-secondary);
-     padding: 15px 40px;
-     color: var(--color-tertiary);
-     border: none;
-     margin-top: 10px;
-     text-transform: uppercase;
-     font-weight: bold;
-  }
- 
-  .btns {
-    display: flex;
-    justify-content: space-between;
- 
-  }
- 
-  .btns button:hover {
-    background-image: linear-gradient(to right, var(--color-tertiary), rgba(79, 79, 83, 0.281));
-    color: var(--color-secondary);
-  }
- */
+  
 
   /*
  
@@ -1075,29 +1062,6 @@ li {
 
 }
 
-/*
- .extensao button {
-    background-color: var(--color-secondary);
-    padding: 15px 40px;
-    color: var(--color-tertiary);
-    border: none;
-    margin-top: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
- }
-
- .btns {
-   display: flex;
-   justify-content: space-between;
-
- }
-
- .btns button:hover {
-   background-image: linear-gradient(to right, var(--color-tertiary), rgba(79, 79, 83, 0.281));
-   color: var(--color-secondary);
- }
-*/
-  
 
 /*APP CSS*/ 
 
@@ -1105,6 +1069,7 @@ li {
 .container {
  padding: 20px;
 }
+
 .bodyA {
     background: var(--color-primary);
 }
@@ -1201,11 +1166,17 @@ margin-right: 0;
   margin: 0 34px;
 }
 
-.btn-box {
- display: flex;
- justify-content: space-between;
-
+.btns-boxA {
+    display:flex;
+    justify-content: space-between;
+    color: red;
 }
+
+.btnsA {
+    color:red;
+}
+
+
 
 
 .btn:hover {
@@ -1220,7 +1191,7 @@ margin-right: 0;
 
 .storage, .dashboard {
 border: solid 3px rgba(54, 162, 235, 1);
- padding: 20px;
+ padding: 15px;
  margin:  30px 30px;
  
 }
@@ -1229,7 +1200,7 @@ border: solid 3px rgba(54, 162, 235, 1);
 .dashboard p {
  margin: auto;
  text-align: center;
- font-weight: bolder;
+
  margin-bottom: 20px;
  color: #191919;
  
@@ -1239,8 +1210,12 @@ border: solid 3px rgba(54, 162, 235, 1);
  width: 100%;
 }
 
+.storage th {
+   font-size : 15px;
+   font-weight: normal;
+   }
 .storage th, td {
- padding: 20px;
+ padding: 10px;
 }
 
 .storage tr:first-child {

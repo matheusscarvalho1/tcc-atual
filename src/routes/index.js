@@ -1,8 +1,18 @@
 const router = require('express').Router()
+const express = require('express')
+
+const path = require('path')
+
+
+
+
 
 const ManagementController = require('../controllers/functions')
 const IndexController = require('../controllers/index')
 const AppController = require('../controllers/app')
+
+;
+
 
 //Rotas
 router.get('/', IndexController.index)
@@ -11,11 +21,21 @@ router.get('/', IndexController.index)
 //Cadastro
 router.get('/cadastro', ManagementController.index)
 router.post('/cadastro/add', ManagementController.add) 
+
+
+
+//Login
+//router.post('/login', ManagementController.login)
     
 
 //Registro dos dados
 router.get('/app', AppController.app)
 router.post('/app/add', ManagementController.addData)
+
+//download e upload do arquivo (certificado)
+
+
+   
 
 
 //Listar dados
@@ -28,12 +48,22 @@ router.get('/appList', (req, res) => {
 })
 
 
-
 // editar
-
+router.get('/edit', ManagementController.indexEdit)
+router.post('/edit/:id', ManagementController.edit)
 
 // remover
 router.get('/remove/:id', ManagementController.remove)
+
+
+
+
+
+
+
+
+
+
 
 
 router.get('/homepage', (req, res) => {

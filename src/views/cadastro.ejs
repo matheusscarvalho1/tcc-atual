@@ -12,7 +12,7 @@
 <a href="/app"><button>App</button></a>
 <a href="/appList"><button>AppList</button></a>
 
-    <form class="form" id="formCadastro" action="/cadastro/add" method="POST">
+    <form class="form" id="formCadastro" action="/cadastro/add" autocomplete="off" method="POST">
         <div class="card">
             <div class="card-top">
                 <img class="imglogin" src="img/login-icon.jpg" alt="">
@@ -23,46 +23,49 @@
 
             <div class="card-group">
                 <label for ="nameCad" class="bold">Nome Completo</label>
-                <input type="text" name="name" id="nameCad" placeholder="Digite o seu primeiro nome">
+                <input type="text" name="name" id="nameCad" placeholder="Digite o seu primeiro nome" required>
                 <small class="erro"></small>
             </div>
 
             <div class="card-group">
-                <label for="sNameCad" class="bold">RGA</label>
-                <input type="text" name="rga" id="sNameCad" placeholder="Digite seu sobrenome">
+                <label for="rga" class="bold">RGA</label>
+                <input type="text" name="rga" id="rga" placeholder="Digite seu rga" required>
                 <small class="erro"></small>
             </div>
 
             <div class="card-group">
                 <label for="emailCad" class="bold">Email</label>
-                <input type="email" name="email" id="emailCad" placeholder="Digite seu e-mail">
+                <input type="email" name="email" id="emailCad" placeholder="Digite seu e-mail" required>
                 <small class="erro"></small>
             </div>
 
         
             <div class="card-group">
-                <label for="passwordCad" class="bold">Senha</label>
-                <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                <label for="password" class="bold">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
                 <small class="erro"></small>
             </div>
         
             <div class="card-group">
+                <label><input type="checkbox" onclick="mostrarSenha()";>Mostrar senha</label>
+            </div>
+
+            <!-- <div class="card-group">
                 <label class="bold">Seu perfil é de professor ?</label>
             </div>
                 <input type="checkbox" id="chk" value="false" />
                 <label for="chk" class="switch">
                     <span class="slider"></span>
-                </label>
+                </label> -->
         
-            <div class="card-group">
-                <label><input type="checkbox" onclick="mostrarSenha();">Mostrar senha</label>
-            </div>
+           
             <div class="card-group btns">
                 <button type="submit" id="sendCad">Cadastrar</button>
-                <a href="/"><button id="btnLogin">Voltar</button></a>
+            </form>
+                <a href="/"><button type="button" id="btnLogin">Voltar</button></a>
             </div>  
         </div>
-    </form>
+    
 
 <footer>
     <div class="footer-container ">
@@ -79,5 +82,6 @@
 
     <%-include('partials/footer.ejs')%>
     <%-include('partials/foot.ejs')%>
+    <script src="js/main.js"></script>
 </body>
 </html>

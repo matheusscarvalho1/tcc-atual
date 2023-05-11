@@ -8,7 +8,7 @@ const schemaData = new mongoose.Schema ({
     course: String,
     phone: Number,
     type: String,
-    file: String,
+    file: Buffer,
     hrsD: Number,
     hrsA: Number,
     msg: String,
