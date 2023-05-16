@@ -1395,12 +1395,7 @@ border: solid 3px rgba(54, 162, 235, 1);
 }
 
 
-.bodyA ul li .content p {
-    border-bottom: 2px solid #fff;
-    margin: 0;
-    padding: 5px;
 
-}
 
 .bodyA ul li .content h2 {
     font-size: 30px;
@@ -1412,4 +1407,19 @@ border: solid 3px rgba(54, 162, 235, 1);
 .bodyA ul li .content p:last-child {
     border: none;
 
+}
+
+.bodyA .contents span {
+    color: var(--color-tertiary);
+}
+
+.bodyA ul li .content p {
+    border-bottom: 2px solid #fff;
+    margin: 0;
+    padding: 5px;
+
+}
+
+.bodyA .contents span {
+    display: block;
 }
