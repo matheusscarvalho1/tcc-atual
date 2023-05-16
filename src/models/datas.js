@@ -11,6 +11,7 @@ const schemaData = new mongoose.Schema ({
     file: Buffer,
     hrsD: Number,
     hrsA: Number,
+    catA: String,
     msg: String,
 
     

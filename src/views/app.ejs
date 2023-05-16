@@ -73,62 +73,172 @@
                 </div>
             </div>
             
-            <!-- <div class="input-wrapper">
-                <label>Categoria das horas complementares</label>
-                <select id ="categoriaApp" name="categA" required>
+            <div class="input-wrapper">
+                <label>Categoria das horas complementares (Se caso você estiver registrando horas de extensão Marca a opção '<b>Horas de Extensão</b>', caso não for, selecione o grupo em que sua atividade se encaixa)</label>
+                <select id ="categoriaApp" name="catA">
                     <option value="">-- Selecione --</option>
+                    <option value="Horas de Extensão">Horas de extensão</option>
                     <optgroup label="Grupo I: Palestras e Cursos adicionais">
-                        <option>Disciplinas de outros cursos, de outras IES, que não são aproveitadas como disciplinas obrigatórias ou optativas. Em todos os casos as instituições e cursos devem ser devidamente reconhecidos pelo MEC.
+                        <option value="Grupo 1 - Opção 1"><b>Opção 1:</b> Disciplinas de outros cursos, de outras IES, que não são aproveitadas como disciplinas obrigatórias ou optativas. Em todos os casos as instituições e cursos devem ser devidamente reconhecidos pelo MEC.
                         </option>
-                        <option>Disciplinas de outros cursos da UFMT e que não são aproveitadas como disciplinas obrigatórias ou optativas.
+                        <option value="Grupo 1 - Opção 2"><b>Opção 2:</b> Disciplinas de outros cursos da UFMT e que não são aproveitadas como disciplinas obrigatórias ou optativas.
                         </option>
-                        <option>Participação efetiva e comprovada em semanas acadêmicas, palestras, programas de treinamento, jornadas, simpósios, seminários, congressos, encontros, <br><br>conferências, fóruns e outros eventos de ciência e tecnologia em áreas diretas e correlatas à Engenharia de Computação, promovidas pela UFMT, outras IES ou por órgãos públicos, conselhos, entidades da sociedade civil ou associações de classe.
+                        <option value="Grupo 1 - Opção 3"><b>Opção 3:</b> Participação efetiva e comprovada em semanas acadêmicas, palestras, programas de treinamento, jornadas, simpósios, seminários, congressos, encontros, conferências, fóruns e outros eventos de ciência e tecnologia em áreas diretas e correlatas à Engenharia de Computação...
                         </option>
-                        <option>Participação em viagens de estudo no Brasil, organizadas pela UFMT ou por outra IES.
+                        <option value="Grupo 1 - Opção 4"><b>Opção 4:</b> Participação em viagens de estudo no Brasil, organizadas pela UFMT ou por outra IES.
                         </option>
-                        <option>Participação em viagens de estudo para o exterior organizadas pela UFMT ou por outra IES.
+                        <option value="Grupo 1 - Opção 5"><b>Opção 5:</b> Participação em viagens de estudo para o exterior organizadas pela UFMT ou por outra IES.
                         </option>
-                        <option>Outras atividades propostas pelo discente, em qualquer campo do conhecimento afim ao universo acadêmico, sujeitas à avaliação do Colegiado de Curso de Engenharia de Computação quanto ao mérito para o discente e para o curso e ao tempo de duração.
+                        <option value="Grupo 1 - Opção 6"><b>Opção 6:</b> Outras atividades propostas pelo discente, em qualquer campo do conhecimento afim ao universo acadêmico, sujeitas à avaliação do Colegiado de Curso de Engenharia de Computação quanto ao mérito para o discente e para o curso e ao tempo de duração.
                         </option>
                     </optgroup>
                     <optgroup label="Grupo II: Representação e participação em projetos">
-                        <option>Representação discente junto a órgãos da UFMT, com comprovação de, no mínimo, 75% de participação efetiva, desde que o mandato representativo tenha, no mínimo, 12 horas de mandato.
+                        <option value="Grupo 2 - Opção 1"><b>Opção 1:</b> Representação discente junto a órgãos da UFMT, com comprovação de, no mínimo, 75% de participação efetiva, desde que o mandato representativo tenha, no mínimo, 12 horas de mandato.
                         </option>
-                        <option>Bolsista remunerado ou voluntário de iniciação científica realizada no âmbito da UFMT, com o devido registro na Pró-Reitoria de Pesquisa e/ou participação no Seminário de Iniciação Científica.
+                        <option value="Grupo 2 - Opção 2"><b>Opção 2:</b> Bolsista remunerado ou voluntário de iniciação científica realizada no âmbito da UFMT, com o devido registro na Pró-Reitoria de Pesquisa e/ou participação no Seminário de Iniciação Científica.
                         </option>
-                        <option>Monitoria em disciplinas da UFMT com a devida comprovação do Departamento ou do professor responsável e registro pela Pró-Reitoria de Ensino de Graduação.
+                        <option value="Grupo 2 - Opção 3"><b>Opção 3:</b> Monitoria em disciplinas da UFMT com a devida comprovação do Departamento ou do professor responsável e registro pela Pró-Reitoria de Ensino de Graduação.
                         </option>
-                        <option>Atividades desenvolvidas como Bolsa PET (Programa de Educação Tutorial), Bolsa EaD (Educação à Distância) e demais bolsas acadêmicas.
+                        <option value="Grupo 2 - Opção 4"><b>Opção 4:</b> Atividades desenvolvidas como Bolsa PET (Programa de Educação Tutorial), Bolsa EaD (Educação à Distância) e demais bolsas acadêmicas.
                         </option>
-                        <option>Outras atividades propostas pelo discente, em qualquer campo do conhecimento afim ao universo acadêmico, sujeitas à avaliação do Colegiado de Curso de Engenharia de Computação quanto ao mérito para o discente e para o curso e ao tempo de duração. 
+                        <option value="Grupo 2 - Opção 5"><b>Opção 5:</b> Outras atividades propostas pelo discente, em qualquer campo do conhecimento afim ao universo acadêmico, sujeitas à avaliação do Colegiado de Curso de Engenharia de Computação quanto ao mérito para o discente e para o curso e ao tempo de duração. 
                         </option>
                     </optgroup>
                     <optgroup label="Grupo III: Produção Científico-Tenológica">
-                        <option>Publicação de artigo em periódico científico com ISSN, ou capítulo de livro com ISBN.
+                        <option value="Grupo 3 - Opção 1"><b>Opção 1:</b> Publicação de artigo em periódico científico com ISSN, ou capítulo de livro com ISBN.
                         </option>
-                        <option>Publicação de livro ou manual técnico com ISBN.
+                        <option value="Grupo 3 - Opção 2"><b>Opção 2:</b> Publicação de livro ou manual técnico com ISBN.
                         </option>
-                        <option>Publicação de artigo ou resumo expandido em anais de eventos científicos.
+                        <option value="Grupo 3 - Opção 3"><b>Opção 3:</b> Publicação de artigo ou resumo expandido em anais de eventos científicos.
                         </option>
-                        <option>Publicação de resumo simples em anais de eventos científicos.
+                        <option value="Grupo 3 - Opção 4"><b>Opção 4:</b> Publicação de resumo simples em anais de eventos científicos.
                         </option>
-                        <option>Publicação de artigo em periódicos não científicos (magazines) ou em jornais
+                        <option value="Grupo 3 - Opção 5"><b>Opção 5:</b> Publicação de artigo em periódicos não científicos (magazines) ou em jornais
                         </option>
-                        <option>Apresentação oral de trabalhos em eventos científicos
+                        <option value="Grupo 3 - Opção 6"><b>Opção 6:</b> Apresentação oral de trabalhos em eventos científicos
                         </option>
-                        <option>Apresentação de trabalhos, por meio de pôster, banner, vídeo ou maquete, em eventos científicos.
+                        <option value="Grupo 3 - Opção 7"><b>Opção 7:</b> Apresentação de trabalhos, por meio de pôster, banner, vídeo ou maquete, em eventos científicos.
                         </option>
-                        <option>Prêmio em concursos de projetos, inovação tecnológica ou outra modalidade, em níveis internacional, nacional ou regional.
+                        <option value="Grupo 3 - Opção 8"><b>Opção 8:</b> Prêmio em concursos de projetos, inovação tecnológica ou outra modalidade, em níveis internacional, nacional ou regional.
                         </option>
-                        <option>Prêmio em concursos de projetos, inovação tecnológica ou outra modalidade, em nível local.
+                        <option value="Grupo 3 - Opção 9"><b>Opção 9:</b> Prêmio em concursos de projetos, inovação tecnológica ou outra modalidade, em nível local.
                         </option>
-                        <option>Outras produções apresentadas pelo discente, em qualquer campo do conhecimento afim ao universo acadêmico, sujeitas à avaliação do Colegiado de Curso de Engenharia de Computação quanto ao mérito para o discente e para o curso e ao tempo de duração.
+                        <option value="Grupo 3 - Opção 10"><b>Opção 10:</b> Outras produções apresentadas pelo discente, em qualquer campo do conhecimento afim ao universo acadêmico, sujeitas à avaliação do Colegiado de Curso de Engenharia de Computação quanto ao mérito para o discente e para o curso e ao tempo de duração.
                         </option>
                     </optgroup>
                 </select>
                 <span class="erro"></span>
-            </div> -->
+        </div>
+        <br>
+        <br>
 
+        <div class="contents">
+            <ul>
+                <li>   
+                    <div class="content">
+                            <h1>Grupo I: Palestras e Cursos adicionais</h1>
+                            <br>
+                                <h2>Opção 1</h2>
+                                    <p>Representação discente junto a órgãos da UFMT, com comprovação de, no mínimo, 75% de participação efetiva, desde que o mandato representativo tenha, no mínimo, 12 horas de mandato.
+                                    </p>
+                                    <br>
+                                <h2>Opção 2</h2>
+                                    <p>Disciplinas de outros cursos da UFMT e que não são aproveitadas como disciplinas obrigatórias ou optativas.
+                                    </p>
+                                    <br>
+                                <h2>Opção 3</h2>
+                                    <p>Participação efetiva e comprovada em semanas acadêmicas, palestras, programas de treinamento, jornadas, simpósios, seminários, congressos, encontros, conferências, fóruns e outros eventos de ciência e tecnologia em áreas diretas e correlatas à Engenharia de Computação, promovidas pela UFMT, outras IES ou por órgãos públicos, conselhos, entidades da sociedade civil ou associações de classe.
+                                    </p>
+                                    <br>
+                                <h2>Opção 4</h2>
+                                    <p>Participação em viagens de estudo no Brasil, organizadas pela UFMT ou por outra IES.
+                                    </p>
+                                    <br>
+                                <h2>Opção 5</h2>
+                                    <p>Participação em viagens de estudo para o exterior organizadas pela UFMT ou por outra IES.
+                                    </p>
+                                    <br>
+                                <h2>Opção 6</h2>
+                                    <p>Outras atividades propostas pelo discente, em qualquer campo do conhecimento afim ao universo acadêmico, sujeitas à avaliação do Colegiado de Curso de Engenharia de Computação quanto ao mérito para o discente e para o curso e ao tempo de duração.
+                                    </p>
+                    </div>
+                </li>
+        
+                <li>
+                        <div class="content">
+                        <h1>Grupo II: Representação e Participação em projetos</h1>
+                        <br>
+                            <h2>Opção 1</h2>
+                                <p>Representação discente junto a órgãos da UFMT, com comprovação de, no mínimo, 75% de participação efetiva, desde que o mandato representativo tenha, no mínimo, 12 horas de mandato.
+                                </p>
+                                <br>
+                            <h2>Opção 2</h2>
+                                <p>Bolsista remunerado ou voluntário de iniciação científica realizada no âmbito da UFMT, com o devido registro na Pró-Reitoria de Pesquisa e/ou participação no Seminário de Iniciação Científica.
+                                </p>
+                                <br>
+                            <h2>Opção 3</h2>
+                                <p>Monitoria em disciplinas da UFMT com a devida comprovação do Departamento ou do professor responsável e registro pela Pró-Reitoria de Ensino de Graduação.
+                                </p>
+                                <br>
+                            <h2>Opção 4</h2>
+                                <p>Atividades desenvolvidas como Bolsa PET (Programa de Educação Tutorial), Bolsa EaD (Educação à Distância) e demais bolsas acadêmicas.
+                                </p>
+                                <br>
+                            <h2>Opção 5</h2>
+                                <p>Outras atividades propostas pelo discente, em qualquer campo do conhecimento afim ao universo acadêmico, sujeitas à avaliação do Colegiado de Curso de Engenharia de Computação quanto ao mérito para o discente e para o curso e ao tempo de duração. 
+                                </p>
+                            </div>
+                </li>
+        
+                <li>
+                        <div class="content">
+                        <h1>Grupo III: Produção Científico-Tenológica</h1>
+                        <br>
+                            <h2>Opção 1</h2>
+                                <p>Publicação de artigo em periódico científico com ISSN, ou capítulo de livro com ISBN.
+                                </p>
+                                <br>
+                            <h2>Opção 2</h2>
+                                <p>Publicação de livro ou manual técnico com ISBN.
+                                </p>
+                                <br>
+                            <h2>Opção 3</h2>
+                                <p>Publicação de artigo ou resumo expandido em anais de eventos científicos.
+                                </p>
+                                <br>
+                            <h2>Opção 4</h2>
+                                <p>Publicação de resumo simples em anais de eventos científicos.
+                                </p>
+                                <br>
+                            <h2>Opção 5</h2>
+                                <p>Publicação de artigo em periódicos não científicos (magazines) ou em jornais.
+                                </p>
+                                <br>
+                            <h2>Opção 6</h2>
+                                <p>Apresentação oral de trabalhos em eventos científicos.
+                                </p>
+                                <br>
+                            <h2>Opção 7</h2>
+                                <p>Apresentação de trabalhos, por meio de pôster, banner, vídeo ou maquete, em eventos científicos.
+                                </p>
+                                <br>
+                            <h2>Opção 8</h2>
+                                <p>Prêmio em concursos de projetos, inovação tecnológica ou outra modalidade, em níveis internacional, nacional ou regional.
+                                </p>
+                                <br>
+                            <h2>Opção 9</h2>
+                                <p>Prêmio em concursos de projetos, inovação tecnológica ou outra modalidade, em nível local.
+                                </p>
+                                <br>
+                            <h2>Opção 10</h2>
+                                <p>Outras produções apresentadas pelo discente, em qualquer campo do conhecimento afim ao universo acadêmico, sujeitas à avaliação do Colegiado de Curso de Engenharia de Computação quanto ao mérito para o discente e para o curso e ao tempo de duração.
+                                </p>
+                        </div>
+                </li> 
+            </ul>
+            </div>
+        <br>
+        <br>
             <div class="input-wrapper">
                 <label>Mensagem (opcional)</label>
                 <input name="msg" id="msgApp" maxlength="100" placeholder="Digite uma observação para o avaliador" required>
@@ -151,11 +261,6 @@
         
     </section>
 
-    <footer class="footer">
-    © 2023 UFMT - Todos os direitos reservados
-    <br>
-    Desenvolvido por Matheus Carvalho
-    </footer>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/main.js"></script>
