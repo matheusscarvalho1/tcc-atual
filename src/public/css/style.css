@@ -583,7 +583,7 @@ li {
     width: 50%;
     position: absolute;
     left: 50%;
-    top: 700px;
+    top: 650px;
 }
 
 .bodyH .slick-initialized {
@@ -1422,4 +1422,5 @@ border: solid 3px rgba(54, 162, 235, 1);
 
 .bodyA .contents span {
     display: block;
+    font-weight: bolder;
 }
