@@ -22,21 +22,11 @@ router.get('/', IndexController.index)
 router.get('/cadastro', ManagementController.index)
 router.post('/cadastro/add', ManagementController.add) 
 
-
-
-//Login
-//router.post('/login', ManagementController.login)
     
 
 //Registro dos dados
 router.get('/app', AppController.app)
 router.post('/app/add', ManagementController.addData)
-
-//download e upload do arquivo (certificado)
-
-
-   
-
 
 //Listar dados
 router.get('/appList', ManagementController.listData)

@@ -10,7 +10,9 @@ const schemaData = new mongoose.Schema ({
     type: String,
     file: Buffer,
     hrsD: Number,
+    hrsC: Number,
     hrsA: Number,
+    catA: String,
     msg: String,
 
     

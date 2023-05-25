@@ -123,12 +123,23 @@ async function add (req, res) {
         type: req.body.type,
         file: req.body.file,
         hrsD: req.body.hrsD,
+        hrsC: req.body.hrsC,
+        catA: req.body.catA,
         msg: req.body.msg
     });
 
     datas.save()
+
+    ModelDatas.find()
+    .then(soma => {
+      // Cálculos com os valores do banco de dados
+      const total = soma.reduce((acc, SomaT) => acc + SomaT.hrsD, 0);
+      console.log(total)
+    }),
     res.redirect('/appList')
-    }
+    
+    
+}
 
 
 //Função assíncrona p/ lista os dados que estão cadastrado no banco (app)
@@ -165,6 +176,7 @@ async function edit (req, res) {
         type,
         file,
         hrsD,
+        catA,
         msg,
     } = req.body
     
@@ -180,6 +192,7 @@ async function edit (req, res) {
     user.type = type
     user.file = file
     user.hrsD = hrsD
+    user.catA = catA
     user.msg = msg
 
     user.save()
@@ -215,6 +228,7 @@ module.exports = {
     indexEdit,
     remove,
     edit,
+    
     //welcome,
 
 

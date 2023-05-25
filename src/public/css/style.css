@@ -28,7 +28,7 @@ input::-webkit-inner-spin-button {
     padding: 40px;
     font-size: 12px;
     width: 100%;
-    position:absolute;
+    position: absolute;
     bottom: 0;
  }
 
@@ -583,7 +583,7 @@ li {
     width: 50%;
     position: absolute;
     left: 50%;
-    top: 700px;
+    top: 650px;
 }
 
 .bodyH .slick-initialized {
@@ -1255,6 +1255,7 @@ border: solid 3px rgba(54, 162, 235, 1);
     padding: 40px;
     font-size: 12px;
     width: 100%;
+   
 
  }
 
@@ -1290,6 +1291,7 @@ border: solid 3px rgba(54, 162, 235, 1);
     justify-content: space-evenly;
     
   }
+
   .chartBox {
     width: 700px;
     padding: 20px;
@@ -1300,4 +1302,125 @@ border: solid 3px rgba(54, 162, 235, 1);
     
   }
 
-  
+ /*
+ DUVIDAS APP
+ */
+
+.bodyA {
+    position: relative;
+}
+.bodyA .contents {
+    background: #13293d;
+    color: var(--color-primary);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 1vh;
+    font-family: 'Poppins', sans-serif;
+    
+
+  }
+
+  .bodyA ul {
+    margin:0;
+    padding:0;
+    display: flex;
+  }
+
+  .bodyA ul li {
+    position: relative;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.bodyA ul li:hover {
+    background: #8b8b8b;
+    box-shadow: 0 0 0 4px #8b8b8b,
+                0 0 0 6px #8b8b8b;
+
+}
+
+
+.bodyA ul li .content {
+    position: absolute;
+    top: 55px;
+    width: 400px;
+    background-color: var(--color-tertiary);
+    border: 5px solid var(--color-header-footer);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility:hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-50%) translateY(-50px);
+
+}
+
+.bodyA ul li .content:before {
+    content:'';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: var(--color-header-footer);
+    top: -15px;
+    left: 194px;
+    transform: rotate(45deg);
+}
+
+.bodyA ul li:hover .content 
+{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+}
+
+.bodyA ul li .content h2 {
+    margin: 0;
+    padding: 0;
+    color: var(--color-secondary);
+
+}
+.bodyA ul li .content h1 {
+    border-bottom: 2px solid #fff;
+    margin-bottom: 10px;
+    padding: 0;
+
+}
+
+
+
+
+.bodyA ul li .content h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.bodyA ul li .content p:last-child {
+    border: none;
+
+}
+
+.bodyA .contents span {
+    color: var(--color-tertiary);
+}
+
+.bodyA ul li .content p {
+    border-bottom: 2px solid #fff;
+    margin: 0;
+    padding: 5px;
+
+}
+
+.bodyA .contents span {
+    display: block;
+    font-weight: bolder;
+}
