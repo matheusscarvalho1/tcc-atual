@@ -12,6 +12,7 @@ EJS, CSS & JS
 
 
 'npm install nodemon'
+
 'npm install nodemon --save -dev' 
 
  e então -> 'npm run dev' para rodar o servidor no localhost:8080
