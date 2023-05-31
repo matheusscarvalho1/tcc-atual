@@ -1,5 +1,5 @@
 # TCC
-App developed with JS and Node.JS
+App developed with EJS, CSS & JS
 
 
 
