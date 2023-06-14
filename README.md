@@ -69,6 +69,7 @@ Ao clicar no botão ‘Clique aqui e sane suas dúvidas’ localizadas na seçã
 
 
 ![image](https://github.com/matheusscarvalho1/tcc/assets/73304785/d64555d3-d4bb-4893-af1e-3902b4d6e868)
+
 <hr>
 Após clicar, é possivel observar instruções de como fazer o aproveitamento dos certificados sobre atividade complementar e de extensão pelo SEI como ilustrado abaixo nas duas figuras abaixo
 
