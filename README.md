@@ -88,6 +88,7 @@ Ao clicar no botão ‘Clique aqui’ localizado na seção “Sobre”, como il
 Após clicar no botão, o formulário para registrar as informações do certificado é exibido e para utilizar a ferramenta o usuário precisará preenche-lo informando os dados relacionados ao certificado e de sua matrícula conforme são solicitados no formulário.
 
 Os seguintes campos formam o formulário para o registro: Nome completo do usuário, RGA, E-mail, Curso, Telefone, Tipo da carga horária (horas de extensão ou horas complementares), anexo do certificado somente em .pdf, carga horária registrada no documento, carga horária convertida, campos estes ilustrados nas (2) figuras abaixo: (O formulário foi dividido ao meio para melhor nitidez das imagens)
+
 ![image](https://github.com/matheusscarvalho1/tcc/assets/73304785/e58b4d6f-5ec8-40bc-b496-28ff4f18b76e)
 
 ![image](https://github.com/matheusscarvalho1/tcc/assets/73304785/d95753ae-6bcd-4376-bdb1-53fa0d104669)
