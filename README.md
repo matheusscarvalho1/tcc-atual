@@ -1,4 +1,4 @@
-# TCC
+# TCC - Engenharia de Computação - UFMT
 Trabalho de Conclusão de Curso apresentado ao Curso de Engenharia de Computação da FAENG/CUVG/UFMT (área de concentração: Engenharia de Computação) como parte dos requisitos para obtenção do título de Bacharel em Engenharia de Computação.
 
 # Resumo
